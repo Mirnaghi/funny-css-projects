@@ -1,0 +1,87 @@
+:root {
+    --initial-bg: rgb(238, 241, 242);
+    --secondary-bg: rgb(44, 62, 80);
+    --camera-color: rgb(30, 30, 30);
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--initial-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iphone-body {
+    width: 350px;
+    height: 700px;
+    /*border: 2px solid red;*/
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 2px 1px 1px rgba(149,165,166 ,0.3) inset,
+                2px 6px 2px rgba(149,165,166 ,0.3); /*2px 2px 2px gold inset*/
+}
+
+.iphone-screen {
+    width: 90%;
+    height: 80%;
+    background-image: linear-gradient(to right, rgb(253, 142, 129), rgb(195, 67, 101)) ;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+article {
+    background-color: white;
+    padding: 0.8rem;
+}
+
+.iphone-screen:before {
+    content: '';
+    background: var(--secondary-bg);
+    width: 50px;
+    height: 7px;
+    border-radius: 10px;
+    position: absolute;
+    top: -35px;
+    right: 132.5px;
+}
+
+.iphone-screen:after {
+    content: '';
+    /*background: blue;*/
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: -60px;
+    left: 132.5px;
+    box-shadow: 2px 2px 2px rgba(149,165,166); /*2px 0px 2px gold*/
+}
+
+
+.iphone-body:before,
+.iphone-body:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: var(--camera-color);
+    position: absolute;
+    top: 15px;
+    right: 170px;
+}
+
+.iphone-body:after {
+    width: 7px;
+    height: 7px;
+    border-radius: 8px;
+    position: absolute;
+    top: 35px;
+    right: 210px;
+}
