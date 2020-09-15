@@ -28,7 +28,7 @@ body {
 .iphone-screen {
     width: 90%;
     height: 80%;
-    background-image: linear-gradient(to right, rgb(253, 142, 129), rgb(195, 67, 101)) ;
+    background-image: n ;
     border-radius: 10px;
     display: flex;
     align-items: center;
